@@ -96,14 +96,14 @@ public class UserController {
     }
 
     /**
-     * Request not allowerd methods
+     * Request not allowed methods
      *
      * @param request  request
      * @param response response
      * @return json response
      * @throws Exception
      */
-    @RequestMapping(value = "/data", method = {GET, HEAD, POST, PUT, PATCH, DELETE, OPTIONS, TRACE}, produces = "application/json")
+    @RequestMapping(value = "/", method = { HEAD, POST, PUT, PATCH, DELETE, OPTIONS, TRACE}, produces = "application/json")
     @ResponseBody
     public String otherMethod(HttpServletRequest request, HttpServletResponse response) {
         ObjectMapper mapper = new ObjectMapper();

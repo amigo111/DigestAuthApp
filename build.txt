@@ -1,0 +1,12 @@
+App uses Java 7.
+
+To build App maven 2.2.1 must be installed
+
+Go in project directory where pom.xml file exists and run:
+
+mvn clean install
+
+mvn jetty:run
+
+When application is started go in browser on link:
+http://localhost:8080/DigestAuthApp
